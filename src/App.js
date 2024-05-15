@@ -1,13 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
+import Mainpage from './Mainpage';
+import { MapProvider } from './MapContext';
 import './App.css';
-import MapContainer from './MapContainer';
 
 function App() {
   
   return (
-    <div className="App">
-      <MapContainer/>
-    </div>
+    <MapProvider>
+      <div className="App">
+        <Mainpage />
+      </div>
+    </MapProvider>
   );
 }
 
