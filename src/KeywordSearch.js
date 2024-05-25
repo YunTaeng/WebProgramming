@@ -55,6 +55,8 @@ const KeywordSearch = () => {
                     <li key={index}>
                         <p>이름: {result.place_name}</p>
                         <p>카테고리: {result.category_name}</p>
+                        <p>x: {result.x}</p>
+                        <p>y: {result.y}</p>
                     </li>
                 ))}
             </ul>
