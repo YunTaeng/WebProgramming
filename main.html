@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <!-- import css -->
+      <link rel="stylesheet" href="css/main.css">
+      <!-- import dim-layer-popup css -->
+      <link rel="stylesheet" href="css/dimLayer/dim_Intro.css">
+      <link rel="stylesheet" href="css/dimLayer/dim_vr.css">
+      <!-- import JQuery -->
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <!-- import javascript-->
+      <script type="text/javascript" src="javascript/main.js"></script>
+      <!-- import dim-layer-popup javascript-->
+      <script type="text/javascript" src="javascript/dimLayer/dim_Intro.js"></script>
+      <script type="text/javascript" src="javascript/dimLayer/dim_vr.js"></script>
+      <title>About Me</title>
+   </head>
+   <body>
+      <!-- side Menu div -->
+      <div id="sideMenu">
+         <!-- Logo image and popup new layer -->
+         <a href="#layer" class="popupLayer">
+            <!-- cropped image -->
+            <div class="image-cropper">
+               <img id="Logo" src="image/Logo.png">
+            </div>
+         </a>
+         <!-- menu button div -->
+         <div id="menu">
+            <!-- contour -->
+            <hr class="horizontal">
+            <!-- make button go to special id -->
+            <a href="#Intro" class="menuButton">
+               <img class = "icon" src="image/icon/Intro.png">
+               <p class="line">&nbsp;</p>
+               <p class="menuContent">Introduction</p>
+            </a>
+            
+            <hr class="horizontal">
+            <a href="#Been" class="menuButton">
+               <img class = "icon" src="image/icon/Been.png">
+               <p class="line">&nbsp;</p>
+               <p class="menuContent">Where I've Been</p>
+            </a>
+            <hr class="horizontal">
+            <a href="#Gallery" class="menuButton">
+               <img class = "icon" src="image/icon/Gallery.png">
+               <p class="line">&nbsp;</p>
+               <p class="menuContent">Gallery</p>
+            </a>
+            <hr class="horizontal">
+            <a href="#Togo" class="menuButton">
+               <img class = "icon" src="image/icon/Projects.png">
+               <p class="line">&nbsp;</p>
+               <p class="menuContent"> Where I want to go</p>
+            </a>
+            <hr class="horizontal">
+         </div>
+         <!-- make Contact Div -->
+         <div class="Contact">
+            <hr class="horizontal">
+            <h2>Contact</h2>
+            <p>Name : 윤태형</p>
+            <p>Tel: 010-0000-0000</p>
+            <p>Email: howard9166@naver.com</p>
+
+            <!-- make href image to sns -->
+            <div class="imageContact">
+               <a target="_blank" href="https://github.com/YunTaeng" id="Github">
+                  <img src="image/icon/github.png">
+               </a>
+               <a target="_blank" href="https://www.instagram.com/yuntaengs/" id="Instagram">
+                  <img src="image/icon/instagram.png">
+               </a>
+            </div>
+         </div>
+      </div>
+
+      <!-- content div -->
+      <div id="content">
+         
+         <!-- about me div -->
+         <div id="Intro" class="myContent">
+            <h1>Introduction</h1>
+            <p>안녕하세요!</p>
+            <p>이곳은 저의 여행 기록 및 계획을 기록하는 공간입니다. 전 세계를 여행하며 경험한 소중한 순간들과 앞으로 탐험하고 싶은 장소들을 이 웹사이트에 담았습니다.</p>
+            <h2>Where I've Been</h2>
+            <p>제가 다녀온 곳들에 대한 사진을 통해 여행의 추억을 함께 나눕니다. 여행 중 경험한 명소, 맛있는 음식 등 다양한 여행 정보를 기록합니다.</p>
+            <h2>Where I Want to Go</h2>
+            <p>앞으로 가고 싶은 곳들의 리스트와 하고 싶은 일들을 기록합니다. 다음 여행지의 계획을 세우는 과정에서 생각나는 모든 것을 기록합니다.</p>
+            <!-- set video -->
+            <div class="second">
+                <div class="video">
+                    <video controls width="1200">
+                        <source src="video/Intro.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+   
+            
+        </div>
+
+         <!-- Been div -->
+         <div id="Been" class="myContent">
+            <h1>Where I've Been</h1>
+            <div id="UpDiv">
+               <div class="leftDiv">
+                  <h1>2018년</h1>
+                  <h2>12.23 ~ 12.27</h2>
+                  <P>Laos - Vientiane, Vang Vieng</P>
+                  <img src="image/laos.png">
+
+               </div>
+               <div class="rightDiv">
+                  <h1>2019년</h1>
+                  <h2>2.20 ~ 2.26</h2>
+                  <P>Malaysia - Kuala Lumpur</P>
+                  <img src="image/malaysia.png">
+               </div>
+            </div>
+            <div id="DownDiv">
+               <div class="leftDiv">
+                  <h1>2022년</h1>
+                  <h2> 4.26 ~ 5.1</h2>
+                  <P>Korea - Busan</P>
+                  <img src="image/korea.png">
+               </div>
+               <div class="rightDiv">
+                  <h1>2023년</h1>
+                  <h2>2.23 ~ 3.2</h2>
+                  <P>Vietnam - Nha Thrang, Da Lat</P>
+                  <img src="image/vietnam.png">
+               </div>
+            </div>
+            <div class="centerDiv">
+               <div class="toRect"></div>
+            </div>
+         </div>
+         <!-- gallery div -->
+         <div id="Gallery" class="myContent">
+            <h1>Gallery</h1>
+            <!-- add Image and Caption -->
+            <h3>[2018]&nbsp;&nbsp;12.23 ~ 12.27 Travel to Laos</h3>
+            <hr class="horizontal">
+            <div class="gallery">
+               <div class="galleryHolder">
+                  <img src="image/Gallery/Laos/laos1.jpg">
+                  <div class="gallerycaption"> 
+                     <h4>파탓루앙</h4>
+                        
+                  </div>
+               </div>
+               <div class="galleryHolder">
+                  <img src="image/Gallery/Laos/laos2.jpg">
+                  <div class="gallerycaption">
+                     <h4>여름의 크리스마스</h4>
+                  </div>
+               </div>
+               <div class="galleryHolder">
+                  <img src="image/Gallery/Laos/laos3.jpg">
+                  <div class="gallerycaption">
+                     <h4>블루라군</h4>
+                  </div>
+               </div>
+               <div class="galleryHolder">
+                  <img src="image/Gallery/Laos/laos4.jpg">
+                  <div class="gallerycaption">
+                     <h4>카약 래프팅</h4>
+                     이외에도 동굴튜빙, 짚라인, 버기카 등의 액티비티를 즐길 수 있다.
+                  </div>
+               </div>
+            </div>
+            <div class="gallery">
+               <h3>[2019]&nbsp;&nbsp;2.20 ~ 2.26 Travel to Malaysia</h3>
+               <hr class="horizontal">
+               <div class="galleryHolder">
+                  <img src="image/Gallery/Malaysia/malaysia1.png">
+                  <div class="gallerycaption">
+                     <h4>모스크 체험</h4>
+                  </div>
+               </div>
+               <div class="galleryHolder">
+                  <img src="image/Gallery/Malaysia/malaysia2.png">
+                  <div class="gallerycaption">
+                     <h4>바투동굴입구</h4>
+                  </div>
+               </div>
+               <div class="galleryHolder">
+                  <img src="image/Gallery/Malaysia/malaysia3.png">
+                  <div class="gallerycaption">
+                  </div>
+               </div>
+               <div class="galleryHolder">
+                  <img src="image/Gallery/Malaysia/malaysia4.png">
+                  <div class="gallerycaption">
+                  </div>
+               </div>
+            </div>
+            <div class="gallery">
+               <h3>[2022]&nbsp;&nbsp;4.26 ~ 5.1 Travel to Busan</h3>
+               <hr class="horizontal">
+               <div class="galleryHolder">
+                  <img src="image/Gallery/Busan/busan1.png">
+                  <div class="gallerycaption">
+                  </div>
+               </div>
+               <div class="galleryHolder">
+                  <img src="image/Gallery/Busan/busan2.png">
+                  <div class="gallerycaption">
+                  </div>
+               </div>
+               <div class="galleryHolder">
+                  <img src="image/Gallery/Busan/busan3.png">
+                  <div class="gallerycaption">
+                  </div>
+               </div>
+               <div class="galleryHolder">
+                  <img src="image/Gallery/Busan/busan4.png">
+                  <div class="gallerycaption">
+                  </div>
+            </div>
+            </div>
+            <div class="gallery">
+               <h3>[2023]&nbsp;&nbsp;2.23 ~ 3.2 Travel to Vietnam</h3>
+               <hr class="horizontal">
+               <div class="galleryHolder">
+                  <img src="image/Gallery/Nhatrang/Nhatrang1.png">
+                  <div class="gallerycaption">
+                     <h4>달랏 사원</h4>
+                  </div>
+               </div>
+               <div class="galleryHolder">
+                  <img src="image/Gallery/Nhatrang/Nhatrang2.png">
+                  <div class="gallerycaption">
+                  </div>
+               </div>
+               <div class="galleryHolder">
+                  <img src="image/Gallery/Nhatrang/Nhatrang3.png">
+                  <div class="gallerycaption">
+                     <h4>그림같은 날씨</h4>
+                  </div>
+               </div>
+               <div class="galleryHolder">
+                  <img src="image/Gallery/Nhatrang/Nhatrang4.png">
+                  <div class="gallerycaption">
+                     <h4>CCCP Coffee</h4>
+                     싸고 맛있다
+                  </div>
+               </div>
+            </div>
+            
+         </div>
+
+         <!-- TOGO div -->
+         <div id="Togo" class="myContent">
+            <h1>Where I want to go</h1>
+            <a id="vrProjects" href="#vr-layer" class = "TogoLink">
+               <img src="image/togo/japan.jpg">
+            </a>
+         </div>
+      </div>
+
+      <!-- click Logo image -->
+      <div class="dim-layer">
+         <!-- background color -->
+         <div class="dimBg"></div>
+         <!-- new Layer -->
+         <div id="layer" class="pop-layer">
+            <!-- content -->
+            <div class="pop-container">
+               <div class="pop-conts">
+                  <img id="Logo" src="image/Logo.png">
+                  <p><h2>19011546 윤태형</h2></p>
+                  <p>Sejong University</p>
+                  <p>Web Programming Assignment</p>
+                  <!-- goto github and close button -->
+                  <div class="btn-r">
+                     <a href="#" class="btn-layerClose">Close</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- click Togo image -->
+      <div class="vr-dim-layer">
+         <!-- background color -->
+         <div class="vr-dimBg"></div>
+         <!-- new Layer -->
+         <div id="vr-layer" class="vr-pop-layer">
+            <!-- content -->
+            <div class="vr-pop-container">
+               <div class="vr-pop-conts">
+                  <h1>Japan</h1>
+                  <div class="vr-img">
+                     <img src="image/togo/sashi.jpg">
+                  </div>
+                  <div class="vr-video">
+                     <video controls>
+                        <source src="video/street.mp4" type="video/mp4">
+                     </video>
+                  </div>
+                  <p>
+                     <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                     <h2>장점</h2>
+                     일본의 특색 : 문화, 음식(회, 라멘 등), 온천 등<br>
+                     먹거리, 살거리 충분 <br>
+                     우리나라와 가까운데 여행인프라도 좋음 <br>
+                     한동안 엔저때 환전 많이 해둠 <br>
+                  </p>
+                  <!-- goto github and close button -->
+                  <div class="vr-btn-r">
+                     <a href="#" class="vr-btn-layerClose">Close</a>
+                  </div>
+                  <!-- content -->
+               </div>
+            </div>
+         </div>
+      </div>
+      
+   </body>
+</html>

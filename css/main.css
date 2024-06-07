@@ -1,0 +1,451 @@
+@font-face {
+   font-family: 'S-CoreDream-3Light';
+   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+* {
+   font-family: 'S-CoreDream-3Light', serif;
+ }
+/* set size */
+html, body {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+}
+
+/* set sidemenu div css*/
+div#sideMenu {
+   float: left;
+   width: 300px;
+   height: 100%;
+   background-color: black;
+   opacity: 0.8;
+   position: fixed;
+   text-align: center;
+}
+
+div#content {
+   float: left;
+   position: absolute;
+   left: 300px;
+   /* div size (except side menu div size) */
+   width: calc(100% - 300px);
+   height: 100%;
+}
+
+/* concout */
+hr.horizontal {
+   border: solid 1px rgb(33, 37, 33);
+   background-color: rgb(33, 37, 33);
+   margin: 0;
+}
+
+/*Logo*/
+/* rect image to circle image */
+.image-cropper {
+   width: 150px;
+   height: 150px;
+   /* cropper */
+   border-radius: 50%;
+   border: solid 2px gray;
+   margin: 20px;
+   /* cropper -> hidden */
+   overflow: hidden;
+   display: inline-block;
+}
+
+#Logo {
+   width: 100%;
+   height: 100%;
+}
+
+/* if moues over the Logo image */
+.popupLayer:hover {
+   opacity: 0.5;
+}
+/*Logo*/
+
+/*menuButton*/
+.menuButton {
+   float: left;
+   width: 100%;
+   height: 50px;
+   /* a tag remove underline */
+   text-decoration: none;
+   color: white;
+}
+
+.menuButton:hover {
+   opacity: 0.8;
+   background-color: gray;
+}
+
+.icon {
+   float: left;
+   width: 50px;
+   height: 50px;
+}
+
+/* select p tag child in a tag */
+.menuButton>p {
+   float: left;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+/* select p.line tag child in a tag*/
+.menuButton>p.line {
+   height: 80%;
+   margin-top: 5px;
+   margin-left: 10px;
+   margin-right: 10px;
+   border-left: solid 2px rgb(33, 37, 33);
+}
+
+.menuButton>p.menuContent {
+   margin-top: 10px;
+}
+/*MenuButton*/
+
+/*Contact*/
+.Contact {
+   position: absolute;
+   top: 700px;
+   width: 300px;
+}
+
+.Contact>h2 {
+   text-align: left;
+   margin-left: 20px;
+   color: white;
+}
+
+.Contact>p {
+   color: white;
+   text-align: left;
+   font-size: 14px;
+   margin-left: 20px;
+}
+.Contact>p:nth-of-type(1) {
+   font-size: 24px;
+}
+
+#Github>img {
+   float: left;
+   margin-left: 50px;
+   width: 50px;
+   height: 50px;
+}
+
+#Instagram>img {
+   float: right;
+   width: 50px;
+   height: 50px;
+   margin-right: 80px;
+}
+
+.imageContact>a:hover {
+   opacity: 0.5;
+}
+
+.imageContact {
+   text-align: left;
+   margin-left: 15px;
+   margin-right: 0px;
+   margin-top: 20px;
+}
+/*Contact*/
+
+.myContent {
+   float: left;
+   width: 100%;
+   padding-bottom: 30px;
+}
+
+.rightDiv>h1{
+   margin-left: 0px
+}
+
+h1 {
+   margin-left: 10px;
+   font-size: 50px;
+}
+
+/*----------------Intro-------------*/
+
+.video {
+   float: left;
+   margin-top: 10px;
+   margin-bottom: 100px;
+}
+#Intro > * {
+   margin-left: 50px;
+}
+
+/*---------------Intro----------------*/
+
+
+
+/*---------Been-----------*/
+#Been {
+   height: 1300px;
+}
+
+#UpDiv {
+   height: 40%;
+   width: 100%;
+   float: left;
+}
+
+#DownDiv {
+   height: 40%;
+   width: 100%;
+   float: left;
+}
+
+.leftDiv {
+   text-align: right;
+   float: left;
+   width: 40%;
+   height: 50%;
+   margin-left: 5%;
+}
+
+.rightDiv {
+   margin-right: 5%;
+   text-align: left;
+   float: right;
+   width: 40%;
+   height: 50%;
+}
+
+/* hide div */
+#UpDiv .leftDiv {
+   visibility: hidden;
+}
+
+#UpDiv .rightDiv {
+   visibility: hidden;
+   margin-top: 10%;
+}
+
+#DownDiv .leftDiv {
+   visibility: hidden;
+}
+
+#DownDiv .rightDiv {
+   visibility: hidden;
+   margin-top: 10%;
+}
+
+@keyframes fadeIn {
+   from {
+     opacity: 0;
+     transform: translateY(100px);
+   }
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+ 
+ /* 이미지 스타일 */
+ .leftDiv img, .rightDiv img {
+   width: 300px;
+   position: relative;
+   top: -265px;
+ }
+ 
+ /* 위치 조정 및 애니메이션 추가 */
+ .leftDivAnimate img {
+   left: -280px;
+   animation: fadeIn 2s ease-in-out forwards;
+   opacity: 0;
+ }
+ 
+ .rightDivAnimate img {
+   right: -280px;
+   animation: fadeIn 2s ease-in-out forwards;
+   opacity: 0;
+ }
+
+#UpDiv .leftDivAnimate {
+   animation-name: visbeen;
+   animation-delay: 0.5s;
+   -webkit-animation-fill-mode: forwards;
+}
+
+#UpDiv .rightDivAnimate {
+   animation-name: visbeen;
+   animation-delay: 1.2s;
+   -webkit-animation-fill-mode: forwards;
+}
+
+#DownDiv .leftDivAnimate {
+   animation-name: visbeen;
+   animation-delay: 2s;
+   -webkit-animation-fill-mode: forwards;
+}
+
+#DownDiv .rightDivAnimate {
+   animation-name: visbeen;
+   animation-delay: 2.5s;
+   -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes visbeen {
+   to {
+      visibility: visible;
+   }
+}
+
+.centerDiv {
+   margin-left: 40%;
+   width: 20%;
+   height: 100%;
+}
+
+.centerRect {
+   margin-left: 50%;
+   width: 10px;
+   background-color: rgb(0,214,70);
+   animation-name: Been;
+   animation-duration: 6s;
+   -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes Been {
+   from {
+      height: 0%;
+   }
+   to {
+      height: 80%;
+   }
+}
+/*Been*/
+
+/*popup layer*/
+.img-layer {
+   float: left;
+   height: 100%;
+}
+
+.img-layer>img {
+   width: 45%;
+   height: 100%;
+   margin: 5px;
+   float: left;
+}
+
+.java-btn-r {
+   float: left;
+}
+
+.java-pop-conts>p {
+   margin-left: 100px;
+}
+
+.vr-img>img {
+   width: 40%;
+   height: 100%;
+   margin: 5px;
+   float: left;
+}
+
+.vr-video>video {
+   width: 55%;
+   height: 90%;
+   margin: 5px;
+   float: left;
+}
+
+.vr-pop-conts>p {
+   margin-left: 100px;
+}
+
+.vr-btn-r {
+   float: left;
+}
+
+.Ex-btn-r {
+   float: left;
+}
+
+.Ex-pop-conts>p {
+   margin-left: 100px;
+}
+/*popup layer*/
+
+/*GALLERY*/
+#Gallery {
+   margin-top: 200px;
+   height: 2000px;
+}
+
+#Gallery>h3 {
+   margin-left: 10px;
+}
+.gallery {
+   height: 450px;
+}
+
+
+.gallery>div>img {
+   width: 300px;
+   height: 300px;
+   margin-right: 5%;
+   margin-top: 5%;;
+   margin-bottom: 5%;
+   margin-left: 10px;
+   float: left;
+   transition: .5s ease;
+}
+
+.border img {
+   transition: .5s ease;
+}
+
+.gallery>div>img:hover{
+   box-shadow: 0 0 0 10px #000000;
+   transition: .5s ease;
+}
+
+.galleryHolder {
+   float: left;
+   width: 300px;
+   height: 300px;
+   margin-right: 5%;
+}
+
+.gallerycaption {
+   margin-left: 10px;
+}
+
+/*togo*/
+#Togo {
+   height: 700px;
+}
+
+.Title>h2 {
+   margin-right: 25%;
+   text-align: left;
+   float: left;
+}
+
+.TogoLink {
+   float: left;
+   margin: 10px;
+   width: 30%;
+}
+
+.TogoLink>img {
+   width: 100%;
+   height: 300px;
+}
+
+.TogoLink:hover {
+   opacity: 0.5;
+}
+/*togo*/
